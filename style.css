@@ -1,0 +1,80 @@
+/* Pengaturan latar belakang utama menggunakan format Shorthand */
+body {
+    /* Compiling background: color image repeat attachment position */
+    background: rgb(226, 232, 240) url('bg.jpg') no-repeat fixed center top;
+    background-size: cover; /* Tambahan agar gambar menutupi seluruh layar */
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Menggunakan flexbox untuk memposisikan kartu tepat di tengah layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Membuat wadah / kartu utama */
+.profile-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Bagian atas kartu */
+.card-header {
+    /* Menggunakan Hexadecimal */
+    background-color: #1a365d; 
+    
+    /* Menyebutkan warna langsung */
+    color: white; 
+    padding: 25px;
+}
+
+.card-header h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* Bagian isi teks di dalam kartu */
+.card-body {
+    padding: 30px 25px;
+}
+
+.card-body h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    /* Menggunakan nilai RGB */
+    color: rgb(26, 54, 93); 
+}
+
+.subtitle {
+    color: #e53e3e;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.description {
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* Hiasan label skill di bagian bawah kartu */
+.skills span {
+    display: inline-block;
+    background-color: #edf2f7;
+    color: #2d3748;
+    padding: 6px 16px;
+    margin: 0 5px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #cbd5e0;
+}
